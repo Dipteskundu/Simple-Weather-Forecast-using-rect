@@ -1,0 +1,79 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* App container */
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 350px;
+}
+
+/* Heading */
+.App h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Input & Button */
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 65%;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #357abd;
+}
+
+/* Weather Info */
+.weather-box {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 12px;
+  color: #333;
+}
+
+.weather-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.weather-box p {
+  font-size: 16px;
+  margin: 5px 0;
+}
