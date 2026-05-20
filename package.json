@@ -1,0 +1,13 @@
+{
+  "name": "Simple-Weather-Forecast-using-rect",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "npm --prefix weather-app install",
+    "dev": "npm --prefix weather-app run dev",
+    "build": "npm --prefix weather-app run build",
+    "lint": "npm --prefix weather-app run lint",
+    "preview": "npm --prefix weather-app run preview"
+  }
+}
+

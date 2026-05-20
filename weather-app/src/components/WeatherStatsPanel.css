@@ -1,0 +1,156 @@
+:root {
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --card-border: rgba(255, 255, 255, 0.14);
+  --text-strong: rgba(255, 255, 255, 0.95);
+  --text-muted: rgba(255, 255, 255, 0.72);
+}
+
+.weather-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.weather-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.weather-panel__city {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--text-strong);
+  letter-spacing: -0.01em;
+}
+
+.weather-panel__country {
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: 0.9em;
+}
+
+.weather-panel__desc {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.weather-panel__desc-sep {
+  opacity: 0.6;
+}
+
+.weather-panel__temp {
+  text-align: right;
+  min-width: 120px;
+}
+
+.weather-panel__temp-main {
+  color: var(--text-strong);
+  font-size: 42px;
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.weather-panel__deg {
+  font-size: 0.45em;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.weather-panel__temp-sub {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.weather-panel__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0 12px;
+}
+
+.weather-panel__stat {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.weather-panel__stat-k {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.weather-panel__stat-v {
+  color: var(--text-strong);
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.comfort-meter {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.comfort-meter__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.comfort-meter__title {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.comfort-meter__value {
+  color: var(--text-strong);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.comfort-meter__label {
+  margin-left: 6px;
+  opacity: 0.85;
+  font-weight: 700;
+}
+
+.comfort-meter__bar {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.comfort-meter__bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(66, 153, 225, 0.9), rgba(72, 187, 120, 0.92));
+}
+
+.comfort-meter--warn .comfort-meter__bar-fill {
+  background: linear-gradient(90deg, rgba(236, 201, 75, 0.92), rgba(237, 137, 54, 0.92));
+}
+
+.comfort-meter--bad .comfort-meter__bar-fill {
+  background: linear-gradient(90deg, rgba(245, 101, 101, 0.92), rgba(159, 122, 234, 0.92));
+}
+
